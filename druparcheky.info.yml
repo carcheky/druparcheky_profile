@@ -31,6 +31,13 @@ install:
   - layout_builder
   - layout_discovery
   - config_direct_save
+  - devel
+  - admin_toolbar_tools
+  - admin_toolbar_links_access_filter
+  - ctools
+  - backup_migrate
+  - pathauto
+  - fontawesome
 themes:
   - bartik
   - seven
