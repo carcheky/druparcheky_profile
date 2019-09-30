@@ -27,8 +27,10 @@ install:
   - views
   - views_ui
   - automated_cron
-dependencies:
   - admin_toolbar
   - layout_builder
   - layout_discovery
   - config_direct_save
+themes:
+  - bartik
+  - seven
