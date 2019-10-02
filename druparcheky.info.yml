@@ -3,6 +3,9 @@ type: profile
 description: 'Punto de inicio para desarrolladores.'
 version: VERSION
 core: 8.x
+distribution:
+  name: Druparcheky
+  langcode: es
 install:
   - node
   - block
@@ -27,18 +30,13 @@ install:
   - views
   - views_ui
   - automated_cron
-  - layout_builder
-  - layout_discovery
-dependencies:
   - admin_toolbar
-  - config_direct_save
-  - devel
-  - admin_toolbar_tools
   - admin_toolbar_links_access_filter
-  - ctools
+  - admin_toolbar_tools
   - backup_migrate
+  - ctools
+  - devel
   - pathauto
-  - fontawesome
 themes:
   - bartik
   - seven
