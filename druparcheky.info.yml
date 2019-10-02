@@ -6,6 +6,8 @@ core: 8.x
 distribution:
   name: Druparcheky
   langcode: es
+  # install:
+  #   theme: seven
 install:
   - node
   - block
@@ -33,6 +35,12 @@ install:
   - admin_toolbar
   - admin_toolbar_links_access_filter
   - admin_toolbar_tools
+  - backup_migrate
+  - ctools
+  - devel
+  - pathauto
+dependencies:
+  - admin_toolbar
   - backup_migrate
   - ctools
   - devel
