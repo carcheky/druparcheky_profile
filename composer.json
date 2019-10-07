@@ -13,5 +13,5 @@
         "email": "carcheky@gmail.com"
     }],
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": true
 }
