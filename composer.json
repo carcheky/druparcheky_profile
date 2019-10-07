@@ -1,5 +1,6 @@
 {
     "name": "carcheky/druparcheky_profile",
+    "description": "drupal profile for devs",
     "type": "project",
     "require": {
         "drupal/admin_toolbar": "^1.27",
