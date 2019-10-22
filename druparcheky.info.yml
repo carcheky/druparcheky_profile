@@ -39,6 +39,9 @@ install:
   - ctools
   - devel
   - pathauto
+  - language
+  - locale
+  - config_translation
 dependencies:
   - admin_toolbar
   - backup_migrate
