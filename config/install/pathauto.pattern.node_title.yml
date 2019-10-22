@@ -1,0 +1,14 @@
+uuid: 3fd417e7-e8c3-4499-835c-df6b59a8ec58
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_title
+label: '[node:title]'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

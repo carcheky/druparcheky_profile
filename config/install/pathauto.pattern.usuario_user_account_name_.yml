@@ -1,0 +1,14 @@
+uuid: 98df6c56-08c6-4957-9641-358e7f8cffd5
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: usuario_user_account_name_
+label: 'usuario/[user:account-name]'
+type: 'canonical_entities:user'
+pattern: 'usuario/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
