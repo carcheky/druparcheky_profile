@@ -5,7 +5,7 @@ version: VERSION
 core: 8.x
 distribution:
   name: Druparcheky
-  langcode: es
+  # langcode: es
   # install:
   #   theme: seven
 install:
