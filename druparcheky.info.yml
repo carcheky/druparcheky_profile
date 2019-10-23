@@ -42,6 +42,7 @@ install:
   - language
   - locale
   - config_translation
+  - module_filter
 dependencies:
   - admin_toolbar
   - backup_migrate
