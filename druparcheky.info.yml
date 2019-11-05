@@ -50,6 +50,7 @@ dependencies:
   - pathauto
   - module_filter
   - imce
+  - config_devel
 themes:
   - bartik
   - seven
