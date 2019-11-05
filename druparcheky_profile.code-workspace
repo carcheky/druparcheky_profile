@@ -1,8 +1,72 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  // la plantilla debe ser renombrada y colocada en la carpeta del tema
+  // en la raiz de la carpeta del tema deben estar:
+  // - este archivo (tuproyecto.code-workspace)
+  // - carpetas CSS y SCSS
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "browsersync.options": {
+      "proxy": "http://devmodules.local/", // con esta configuración configuras el browsersync
+      "reloadDelay": 0
+    },
+    "liveSassCompile.settings.includeItems": [
+      "./scss/*.scss" // ruta donde lee el código scss
+    ],
+    "liveSassCompile.settings.formats": [{
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css" // ruta donde se genera el código scss
+    }],
+    "liveSassCompile.settings.excludeList": [ // rutas excluidas
+      "**/node_modules/**",
+      ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": false, // genera mapa scss
+    "liveSassCompile.settings.autoprefix": [ // autoprefixer
+      "since 2000",
+      "ie >= 6"
+    ],
+    "saveAndRun": {
+      "commands": [{
+        "match": ".*",
+        "isShellCommand": true,
+        "cmd": "dos2unix testing-dev.sh; bash testing-dev.sh",
+        "wsl": true,
+        "useShortcut": true,
+      }],
+    },
+    "scss.lint.emptyRules": "ignore",
+    "scss.lint.float": "warning"
+  },
+  "extensions": {
+    "recommendations": [ // recomendaciones
+      "aaron-bond.better-comments",
+      "bmewburn.vscode-intelephense-client",
+      "charles-sanford.scss-block-comments",
+      "christian-kohler.path-intellisense",
+      "coenraads.bracket-pair-colorizer",
+      "dbaeumer.vscode-eslint",
+      "dmitrydorofeev.empty-indent",
+      "donjayamanne.githistory",
+      "dssiqueira.drupal-8-snippets",
+      "eamodio.gitlens",
+      "editorconfig.editorconfig",
+      "felipecaputo.git-project-manager",
+      "formulahendry.auto-close-tag",
+      "formulahendry.auto-rename-tag",
+      "hookyqr.beautify",
+      "jeremyrajan.browsersync",
+      "marcostazi.vs-code-drupal",
+      "mblode.twig-language-2",
+      "mrmlnc.vscode-scss",
+      "raiscui.save-and-run-wsl",
+      "ritwickdey.live-sass",
+      "ritwickdey.liveserver",
+      "shardulm94.trailing-spaces",
+      "tsega.drupal-8-javascript-snippets",
+      "tsega.drupal-8-twig-snippets"
+    ]
+  }
 }
