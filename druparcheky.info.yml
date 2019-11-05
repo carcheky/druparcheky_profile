@@ -42,13 +42,14 @@ install:
   - language
   - locale
   - config_translation
-  - module_filter
 dependencies:
   - admin_toolbar
   - backup_migrate
   - ctools
   - devel
   - pathauto
+  - module_filter
+  - imce
 themes:
   - bartik
   - seven
