@@ -32,13 +32,8 @@ install:
   - views
   - views_ui
   - automated_cron
-  - admin_toolbar
   - admin_toolbar_links_access_filter
   - admin_toolbar_tools
-  - backup_migrate
-  - ctools
-  - devel
-  - pathauto
   - language
   - locale
   - config_translation
@@ -51,6 +46,7 @@ dependencies:
   - module_filter
   - imce
   - config_devel
+  - layout_section_classes
 themes:
   - bartik
   - seven
