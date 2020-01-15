@@ -46,6 +46,7 @@ dependencies:
   - module_filter
   - imce
   - config_devel
+  - layout_builders
   - layout_section_classes
 themes:
   - bartik
