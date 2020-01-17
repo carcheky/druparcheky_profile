@@ -47,7 +47,7 @@ install:
   - config_devel
   - layout_builder
   - layout_section_classes
-dependencies:
+# dependencies:
 themes:
   - bartik
   - seven
