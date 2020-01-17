@@ -37,7 +37,6 @@ install:
   - language
   - locale
   - config_translation
-dependencies:
   - admin_toolbar
   - backup_migrate
   - ctools
@@ -48,6 +47,7 @@ dependencies:
   - config_devel
   - layout_builder
   - layout_section_classes
+dependencies:
 themes:
   - bartik
   - seven
