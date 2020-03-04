@@ -15,8 +15,11 @@ use Drupal\user\Entity\User;
  * @see system_install()
  */
 function druparcheky_install() {
+  
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
   $user->roles[] = 'administrator';
   $user->save();
+
+  
 }
