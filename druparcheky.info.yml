@@ -5,49 +5,48 @@ version: VERSION
 core: 8.x
 distribution:
   name: Druparcheky
-  langcode: en
+  langcode: es
   # install:
   #   theme: seven
 install:
   - node
-  # - block
-  # - breakpoint
-  # - ckeditor
-  # - config
-  # - contextual
-  # - menu_link_content
-  # - datetime
-  # - block_content
-  # - editor
-  # - help
-  # - image
-  # - menu_ui
-  # - options
-  # - path
-  # - dblog
-  # - toolbar
-  # - field_ui
-  # - file
-  # - rdf
-  # - views
-  # - views_ui
-  # - automated_cron
-  # - admin_toolbar_links_access_filter
-  # - admin_toolbar_tools
-  # - language
-  # - locale
-  # - config_translation
-  # - admin_toolbar
-  # - backup_migrate
-  # - ctools
-  # - devel
-  # - pathauto
-  # - module_filter
-  # - imce
-  # - config_devel
-  # - layout_builder
-  # - layout_section_classes
-# dependencies:
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - dblog
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - automated_cron
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_tools
+  - language
+  - locale
+  - config_translation
+  - admin_toolbar
+  - backup_migrate
+  - ctools
+  - devel
+  - pathauto
+  - module_filter
+  - imce
+  - config_devel
+  - layout_builder
+  - layout_section_classes
 themes:
   - bartik
   - seven
