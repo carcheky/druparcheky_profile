@@ -1,0 +1,13 @@
+{
+    "name": "carcheky/druparcheky_profile",
+    "description": "profile for quick dev",
+    "type": "profile",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "carcheky",
+            "email": "carcheky@gmail.com"
+        }
+    ],
+    "require": {}
+}
