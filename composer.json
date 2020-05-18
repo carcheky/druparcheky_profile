@@ -4,6 +4,7 @@
     "type": "drupal-profile",
     "keywords": ["Drupal", "profile"],
     "license": "MIT",
+    "homepage": "https://github.com/carcheky/druparcheky_profile",
     "authors": [
         {
             "name": "carcheky",
