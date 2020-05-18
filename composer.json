@@ -1,7 +1,7 @@
 {
     "name": "carcheky/druparcheky_profile",
     "description": "profile for quick dev",
-    "type": "profile",
+    "type": "drupal-profile",
     "license": "MIT",
     "authors": [
         {
@@ -9,6 +9,7 @@
             "email": "carcheky@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "drupal/admin_toolbar": "^2.2",
         "drupal/backup_migrate": "^4.1",
