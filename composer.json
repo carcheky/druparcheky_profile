@@ -9,5 +9,17 @@
             "email": "carcheky@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "drupal/admin_toolbar": "^2.2",
+        "drupal/backup_migrate": "^4.1",
+        "drupal/config_devel": "^1.4",
+        "drupal/ctools": "^3.2",
+        "drupal/devel": "^2.1",
+        "drupal/imce": "^1.7",
+        "drupal/layout_section_classes": "^1.0@RC",
+        "drupal/module_filter": "^3.1",
+        "drupal/pathauto": "^1.6",
+        "drupal/token": "^1.6",
+    }
+
 }
