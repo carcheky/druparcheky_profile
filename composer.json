@@ -2,6 +2,7 @@
     "name": "carcheky/druparcheky_profile",
     "description": "profile for quick dev",
     "type": "drupal-profile",
+    "keywords": ["Drupal", "profile"],
     "license": "MIT",
     "authors": [
         {
