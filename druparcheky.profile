@@ -5,15 +5,8 @@
  * Enables modules and site configuration for a Varbase site installation.
  */
 
-use Symfony\Component\Yaml\Yaml;
+use Drupal\contact\Entity\ContactForm;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\language\Entity\ConfigurableLanguage;
-use Drupal\varbase\Config\ConfigBit;
-use Drupal\varbase\Form\ConfigureMultilingualForm;
-use Drupal\varbase\Form\AssemblerForm;
-use Drupal\varbase\Form\DevelopmentToolsAssemblerForm;
-use Drupal\varbase\Entity\VarbaseEntityDefinitionUpdateManager;
-
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
@@ -34,3 +27,4 @@ function druparcheky_form_install_configure_form_alter(&$form, FormStateInterfac
   $form['admin_account']['account']['mail']['#default_value'] = 'admin@test.test';
   $form['admin_account']['account']['mail']['#description'] = t('In most case, and for <a target="_blank" href="@link">Vardot</a> specific use, we recommend this to always be <em>admin@test.test</em>.', ['@link' => 'http://test.test']);
 }
+
