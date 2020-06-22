@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: push-2-drupal
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+        ref: 'master'
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+         key: ${{ secrets.SSH_PRIVATE_KEY }}
+         name: id_rsa # optional
+         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - run: |
+        git remote add drupalrepo git@git.drupal.org:project/druparcheky_profile.git
+        git config --global user.email "carcheky@gmail.com"
+        git config --global user.name "carcheky"
+        git config --global push.followTags true
+        git checkout master
+        git push -f -u drupalrepo master
