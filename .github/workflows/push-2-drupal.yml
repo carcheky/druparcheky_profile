@@ -26,9 +26,11 @@ jobs:
          name: id_rsa # optional
          known_hosts: ${{ secrets.KNOWN_HOSTS }}
     - run: |
+        version=$(git ls-remote --tags --sort="v:refname" git://github.com/carcheky/testrepoA.git | tail -n1 | sed 's/.*\///; s/\^{}//')
         git remote add drupalrepo git@git.drupal.org:project/druparcheky_profile.git
         git config --global user.email "carcheky@gmail.com"
         git config --global user.name "carcheky"
         git config --global push.followTags true
         git checkout master
+        git tag 8.x-${version}
         git push -f -u drupalrepo master
